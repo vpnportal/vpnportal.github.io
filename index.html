@@ -626,7 +626,12 @@ section.legal-sec { padding: 0; }
 }
 @media (min-width:761px) and (max-width:960px){#main .plats {grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
-</head>
+<style>
+.download-stores {display:flex;flex-wrap:wrap;gap:12px}
+.download-stores .store {position:relative;padding-inline-end:42px}
+.download-stores .store[data-preferred]::after {content:"✓";position:absolute;right:12px;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:#a3f4bc;color:#103e26;font:700 13px/1 system-ui}
+@media(max-width:600px){.download-stores {display:grid;grid-template-columns:minmax(0,1fr)}.download-stores .store {justify-content:flex-start;width:100%}}
+</style></head>
 <body>
 <a class="skip" href="#main">Skip</a>
 <header class="top"><div class="wrap top-in">
@@ -642,7 +647,7 @@ section.legal-sec { padding: 0; }
 <main id="main">
 
 <section class="page-head"><div class="wrap"><h1>VPN Portal ကို ဒေါင်းလုဒ်ဆွဲပါ</h1><p class="lead">၃ ရက် အခမဲ့ စမ်းသုံးပါ။ ကိုယ့်စက်အတွက် Store ကို ရွေးပါ။ Store ပွင့်လာရင် Get သို့မဟုတ် Install ကို နှိပ်ပါ။</p></div></section>
-<section class="tight"><div class="wrap"><div class="plats"><a data-platform="ios" class="card plat" style="--i:0" href="https://apps.apple.com/app/id6754325992" rel="noopener"><span class="plat-ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.5 2-3.6-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.9-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.7zM14.1 5.5c.6-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.6 2.8-1.4z"/></svg></span><span class="plat-name">iPhone နဲ့ iPad</span><span class="plat-sub">iOS / iPadOS</span><span class="plat-get">App Store <span aria-hidden="true">&rarr;</span></span></a><a data-platform="android" class="card plat" style="--i:1" href="https://play.google.com/store/apps/details?id=com.vpnportal.org" rel="noopener"><span class="plat-ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 18a1 1 0 0 0 1 1h1v3h2v-3h4v3h2v-3h1a1 1 0 0 0 1-1V9H6v9zM3.5 9A1.5 1.5 0 0 0 2 10.5v6a1.5 1.5 0 0 0 3 0v-6A1.5 1.5 0 0 0 3.5 9zm17 0a1.5 1.5 0 0 0-1.5 1.5v6a1.5 1.5 0 0 0 3 0v-6A1.5 1.5 0 0 0 20.5 9zM15.5 3.2l1.3-1.3-.7-.7-1.5 1.5A6 6 0 0 0 12 2c-.9 0-1.8.2-2.6.7L7.9 1.2l-.7.7 1.3 1.3A5.9 5.9 0 0 0 6 8h12a5.9 5.9 0 0 0-2.5-4.8zM10 6H9V5h1v1zm5 0h-1V5h1v1z"/></svg></span><span class="plat-name">Android</span><span class="plat-sub">ဖုန်း / Tablet</span><span class="plat-get">Google Play <span aria-hidden="true">&rarr;</span></span></a><a data-platform="mac" class="card plat" style="--i:2" href="https://apps.apple.com/app/id6754325992" rel="noopener"><span class="plat-ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.5 2-3.6-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.9-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.7zM14.1 5.5c.6-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.6 2.8-1.4z"/></svg></span><span class="plat-name">Mac</span><span class="plat-sub">macOS</span><span class="plat-get">App Store <span aria-hidden="true">&rarr;</span></span></a><a data-platform="windows" class="card plat" style="--i:3" href="https://apps.microsoft.com/detail/9MZ350V56RQX" rel="noopener"><span class="plat-ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5 10 4.5v7H3zM11 4.3 21 3v8.5H11zM3 12.5h7v7l-7-1zM11 12.5h10V21l-10-1.4z"/></svg></span><span class="plat-name">Windows</span><span class="plat-sub">PC နဲ့ Laptop</span><span class="plat-get">Microsoft Store <span aria-hidden="true">&rarr;</span></span></a></div></div></section>
+<section class="tight"><div class="wrap"><div class="stores download-stores"><a class="store" data-platform="apple" href="https://apps.apple.com/app/id6754325992" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.5 2-3.6-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.9-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.7zM14.1 5.5c.6-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.6 2.8-1.4z"/></svg><span><small>iPhone · iPad · Mac</small>App Store</span></a><a class="store" data-platform="android" href="https://play.google.com/store/apps/details?id=com.vpnportal.org" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 18a1 1 0 0 0 1 1h1v3h2v-3h4v3h2v-3h1a1 1 0 0 0 1-1V9H6v9zM3.5 9A1.5 1.5 0 0 0 2 10.5v6a1.5 1.5 0 0 0 3 0v-6A1.5 1.5 0 0 0 3.5 9zm17 0a1.5 1.5 0 0 0-1.5 1.5v6a1.5 1.5 0 0 0 3 0v-6A1.5 1.5 0 0 0 20.5 9zM15.5 3.2l1.3-1.3-.7-.7-1.5 1.5A6 6 0 0 0 12 2c-.9 0-1.8.2-2.6.7L7.9 1.2l-.7.7 1.3 1.3A5.9 5.9 0 0 0 6 8h12a5.9 5.9 0 0 0-2.5-4.8zM10 6H9V5h1v1zm5 0h-1V5h1v1z"/></svg><span><small>Android</small>Google Play</span></a><a class="store" data-platform="windows" href="https://apps.microsoft.com/detail/9MZ350V56RQX" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5 10 4.5v7H3zM11 4.3 21 3v8.5H11zM3 12.5h7v7l-7-1zM11 12.5h10V21l-10-1.4z"/></svg><span><small>Windows</small>Microsoft Store</span></a></div></div></section>
 <section class="pay"><div class="wrap">
   <div class="sec-head reveal"><h2>Install ပြီးရင်</h2></div>
   <ol class="pay-steps three"><li class="reveal" style="--i:0"><b>Login ဝင်ပါ</b><span>ရှိပြီးသား Google သို့မဟုတ် Apple အကောင့်နဲ့ တစ်ချက်နှိပ်ပြီး အကောင့်ဖွင့်ပါ။</span></li><li class="reveal" style="--i:1"><b>VPN ကို ခွင့်ပြုပါ</b><span>VPN Portal က VPN ထည့်ခွင့် ဖုန်းက တစ်ခါ မေးပါမယ်။ Allow ကို နှိပ်ပါ။</span></li><li class="reveal" style="--i:2"><b>START ကို နှိပ်ပါ</b><span>Auto မှာထားပါ သို့မဟုတ် ဆာဗာ ရွေးပါ။ Android မှာ VPN မပိတ်သွားအောင် Background ခွင့်ပြုချက်ကိုပါ App က ကူညီပေးပါတယ်။</span></li></ol>
@@ -651,14 +656,17 @@ section.legal-sec { padding: 0; }
 
 <script>
 (() => {
-  const grid = document.querySelector('#main .plats');
-  if (!grid) return;
+  const grid = document.querySelector('.download-stores');
   const ua = navigator.userAgent;
-  const ios = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-  const platform = /Android/i.test(ua) ? 'android' : ios ? 'ios' : '';
-  if (!platform) return;
-  const card = grid.querySelector('[data-platform="' + platform + '"]');
-  if (card) { card.setAttribute('data-preferred', ''); grid.prepend(card); }
+  const platform = /Android/i.test(ua) ? 'android' :
+    /iPhone|iPad|iPod|Macintosh/i.test(ua) ? 'apple' :
+    /Windows/i.test(ua) ? 'windows' : '';
+  const badge = grid.querySelector('[data-platform="' + platform + '"]');
+  if (badge) {
+    badge.setAttribute('data-preferred', '');
+    badge.setAttribute('aria-label', badge.innerText.trim() + ' — သင့်စက်အတွက်');
+    grid.prepend(badge);
+  }
 })();
 </script></main>
 <footer class="foot"><div class="wrap">
